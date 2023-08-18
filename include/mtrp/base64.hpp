@@ -134,7 +134,7 @@ namespace mtrp::b64
         detail::__encode<detail::c_api::mtrp_b64_encode>(input, std::forward<OUT>(output), padding_option);
     }
 
-    /** Encoder
+    /** Decoder
      * 
      * @param input A reference to the ENCODED message container (can be any ContiguousContainer, like std::vector or std::string)
      * @param output A reference to the future DECODED message container (can be any ContiguousContainer, like std::vector or std::string)
@@ -160,7 +160,7 @@ namespace mtrp::b64
             detail::__encode<detail::c_api::mtrp_b64url_encode>(input, std::forward<OUT>(output), padding_option);
         }
 
-        /** Encoder
+        /** Decoder
          * 
          * @param input A reference to the ENCODED message container (can be any ContiguousContainer, like std::vector or std::string)
          * @param output A reference to the future DECODED message container (can be any ContiguousContainer, like std::vector or std::string)
